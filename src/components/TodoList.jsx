@@ -24,7 +24,7 @@ function TodoList() {
   }, [todos]);
 
   useEffect(() => {
-    if (count === 5) alert("오늘 5개나 완료하셨네요!");
+    if (count === todos.length && count > 0) alert("오늘 할 일을 모두 완료하셨네요!");
   }, [count]);
 
   const handleInputChange = (e) => {
