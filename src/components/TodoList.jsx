@@ -7,31 +7,27 @@ function TodoList() {
 
   useEffect(() => {
     const data = [
-      // 이곳에 프로그램이 처음 렌더링 될 때 표시될 todo list를 {id, text, completed}를 키로 갖는 객체 형식으로 작성해주세요
-      /*********************정답 코드*********************/
       {id: 1, text: "산책 가기", completed: false},
       {id: 2, text: "멋사 과제", completed: true},
       {id: 3, text: "야구 보기", completed: false},
-      /**************************************************/
     ];
-    //이곳에 todos를 변경시키는 코드를 작성해주세요.
+
     setTodos(data);
   }, []);
 
-  // useEffect(() => {
-  //   let n = 0;
-  //   for (let i = 0; i < todos.length; i++) {
-  //     if (todos[i].completed) n++;
-  //   }
-  //   setCount(n);
-  // }, [todos]);
+  useEffect(() => {
+    let n = 0;
+    for (let i = 0; i < todos.length; i++) {
+      if (todos[i].completed) n++;
+    }
+    setCount(n);
+  }, [todos]);
 
   useEffect(() => {
     if (count === 5) alert("오늘 5개나 완료하셨네요!");
   }, [count]);
 
   const handleInputChange = (e) => {
-    // 이곳에 입력한 todo 내용을 저장하도록 하는 코드를 작성해주세요.
     setInputValue(e.target.value);
   };
 
@@ -49,20 +45,20 @@ function TodoList() {
       }
       return todo;
     });
-    // 이곳에 변경된 completed가 todos에 반영되도록 하는 코드를 작성해주세요
+
     setTodos(updatedTodos);
   };
 
   // 어른 사자 과제 답
-  useEffect(() => {
-    let n = todos.filter((a) => a.completed).length;
-    setCount(n);
-  }, [todos]);
+  // useEffect(() => {
+  //   let n = todos.filter((a) => a.completed).length;
+  //   setCount(n);
+  // }, [todos]);
 
-  const handleDelete = (id) => {
-    const notDeletedTodos = todos.filter((a) => a.id !== id);
-    setTodos(notDeletedTodos);
-  };
+  // const handleDelete = (id) => {
+  //   const notDeletedTodos = todos.filter((a) => a.id !== id);
+  //   setTodos(notDeletedTodos);
+  // };
 
   return (
     <div className="todolist">
@@ -75,7 +71,7 @@ function TodoList() {
               {todo.text}
             </span>
             {/* 어른 사자 과제 답 */}
-            <button onClick={() => handleDelete(todo.id)}>삭제</button>
+            {/* <button onClick={() => handleDelete(todo.id)}>삭제</button> */}
           </li>
         ))}
       </ul>
