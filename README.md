@@ -21,6 +21,10 @@ _src/components/TodoList.jsx 에서 진행해주세요!_
 
 모든 조건을 만족하여 다음 영상과 같이 작동하게 하려면 주석으로 처리된 빈 칸에 어떤 코드가 들어가야 할까요?
 
+
+https://user-images.githubusercontent.com/100702397/234918095-bd31b447-ded4-4c07-ac3d-23157e189c2a.mp4
+
+
 <br/>
 
 # [🦁 어른 사자의 길 🦁]
