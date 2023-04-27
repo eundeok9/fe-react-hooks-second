@@ -34,6 +34,10 @@ https://user-images.githubusercontent.com/100702397/234920546-64f8626b-6bc8-4802
 1. 완료한 할 일의 개수를 count 하는 코드를 `filter 메서드를 사용하도록 수정`하여 같은 결과를 내도록 구현해주세요!
 2. 각 todo 옆에 삭제 버튼을 생성하여 todo를 삭제할 수 있는 `삭제 기능을 추가`해주세요!
 
+
+https://user-images.githubusercontent.com/100702397/234928734-c63d5573-5e63-47d4-ba19-2e9f31ff90df.mp4
+
+
 **이번에도 역시 조건을 모두 만족하여 가장 먼저 과제를 lionz에 제출해주신 한 분께 커피를 사드리도록 하겠습니다😎**
 
 <br/>
