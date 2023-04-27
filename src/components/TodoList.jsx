@@ -18,17 +18,17 @@ function TodoList() {
     setTodos(data);
   }, []);
 
-  useEffect(() => {
-    let n = 0;
-    for (let i = 0; i < todos.length; i++) {
-      if (todos[i].completed) n++;
-    }
-    setCount(n);
-  }, [todos]);
-
   // useEffect(() => {
-  //   if (count === 5) alert("오늘 5개나 완료하셨네요!");
-  // }, [count]);
+  //   let n = 0;
+  //   for (let i = 0; i < todos.length; i++) {
+  //     if (todos[i].completed) n++;
+  //   }
+  //   setCount(n);
+  // }, [todos]);
+
+  useEffect(() => {
+    if (count === 5) alert("오늘 5개나 완료하셨네요!");
+  }, [count]);
 
   const handleInputChange = (e) => {
     // 이곳에 입력한 todo 내용을 저장하도록 하는 코드를 작성해주세요.
