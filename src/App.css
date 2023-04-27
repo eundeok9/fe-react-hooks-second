@@ -1,6 +1,7 @@
-.todolist {
+.todolist,
+.randomgame {
   margin: 30px;
-  width: 50%;
+  width: 30%;
   background-color: beige;
   padding: 30px;
   border-radius: 20px;
@@ -22,7 +23,6 @@ form {
 input {
   border-radius: 10px;
   border: none;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.04);
   height: 30px;
   width: 70%;
 }
@@ -36,4 +36,12 @@ button {
   background-color: yellowgreen;
   border: none;
   color: white;
+}
+
+ul > li > span {
+  cursor: pointer;
+}
+
+.inputzone > span {
+  margin-right: 10px;
 }
