@@ -5,7 +5,6 @@ function TodoList() {
   const [inputValue, setInputValue] = useState(""); // 입력한 todo를 담음
 
   useEffect(() => {
-    // 처음 렌더링 될 때 항상 표시되는 todo-list
     const data = [
       {id: 1, text: "산책 가기", completed: false},
       {id: 2, text: "멋사 과제 하기", completed: true},
@@ -20,7 +19,8 @@ function TodoList() {
   };
 
   // 추가 버튼 누르면 todos에 새로 입력한 todo가 반영됨.
-  const handleFormSubmit = () => {
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
     const newTodo = {id: Date.now(), text: inputValue, completed: false};
     setTodos([...todos, newTodo]);
     setInputValue("");
