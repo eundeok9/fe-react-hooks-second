@@ -41,6 +41,13 @@ ul > li > span {
   cursor: pointer;
 }
 
+ul > li > button {
+  margin-left: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
 .inputzone > span {
   margin-right: 10px;
 }
